@@ -1,0 +1,7 @@
+<h1><%= @task.title %></h1>
+
+<p><%= @task.details %></p>
+
+<p><%= link_to 'Back to list', tasks_path %></p>
+
+<%= button_to "Edit this task", edit_task_path(id: @task.id), :method => "get" %>
